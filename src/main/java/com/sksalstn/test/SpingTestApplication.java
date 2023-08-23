@@ -13,7 +13,7 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 
 @SpringBootApplication
-@MapperScan(basePackages="com.sksalstn.spring.test.*")
+@MapperScan(basePackages="com.sksalstn.test.*")
 public class SpingTestApplication {
 
 	public static void main(String[] args) {
