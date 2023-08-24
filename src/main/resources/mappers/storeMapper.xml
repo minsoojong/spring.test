@@ -9,13 +9,13 @@
  	resultType="com.sksalstn.test.database.domain.Store">
  		SELECT
  			`id`
- 			,`name`
- 			,`phoneNumber`
- 			,`address`
- 			,`businessNumber`
- 			,`introduce`
- 			,`createdAt`
- 			,`updatedAt`
+ 			, `name`
+ 			, `phoneNumber`
+ 			, `address`
+ 			, `businessNumber`
+ 			, `introduce`
+ 			, `createdAt`
+ 			, `updatedAt`
  		FROM 
  			`store`	
  	
