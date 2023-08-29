@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<select id="selectSeller" parameterType="int"
+resurtType="com.sksalstn.test.jsp.seller">
+	SELECT
+		`id`
+		, `nickname`
+		, `temperature`
+		, `profileImage`
+		, `createdAt`
+		, `updatedAt`
+	FROM
+		`seller`	
+
+
+
+</select>
+
+
+

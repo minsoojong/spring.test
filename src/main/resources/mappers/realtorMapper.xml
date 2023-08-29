@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.sksalstn.test.realtor.repository.RealtorRepository">
+	
+	<insert id="insertRealtor" parameterType="com.sksalstn.test.realtor.domain.Realtor">
+	
+		INSERT INTO `new_review`
+ 		(
+			`Id`
+			, `office`
+			, `phoneNumber`
+			, `address`
+			, `grade`
+			, `createdAt`
+			, `updatedAt`
+ 		) 
+ 		VALUES
+ 		(
+			#{Id}
+			, #{office}
+			, #{phoneNumber}
+			, #{address}
+			, #{grade}
+			, NOW()
+			, NOW()
+ 		)
+	
+	</insert>
+
+
+
+</mapper>

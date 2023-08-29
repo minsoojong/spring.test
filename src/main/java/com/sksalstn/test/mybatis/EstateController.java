@@ -29,15 +29,15 @@ public class EstateController {
 		
 	}
 	
-	@RequestMapping("/2")
-	public List<Estate> estateByRentPrice(@RequestParam("rent") int rentPrice) {
-		
-			List<Estate> estateList = estateService.getEstateByRentPrice(rentPrice);
-			
-			return estateList;
-		
-		
-	}
+//	@RequestMapping("/2")
+//	public List<Estate> estateByRentPrice(@RequestParam("rent") int rentPrice) {
+//		
+//			List<Estate> estateList = estateService.getEstateByRentPrice(rentPrice);
+//			
+//			return estateList;
+//		
+//		
+//	}
 	
 	
 	

@@ -25,8 +25,7 @@ public class EstateService {
 	
 	// 전달받은 월세보다 낮은 매물정보 돌려주는 기능
 	
-	public List<Estate> getEstateByRentPrice(int rentPrice) {
-		List<Estate> estateByRentPriceList = EstateRepository.selectEstateByRentPrice(rentPrice);
+
 	
 	
 	
@@ -35,4 +34,4 @@ public class EstateService {
 	
 	
 
-}
+
