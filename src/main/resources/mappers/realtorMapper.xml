@@ -5,31 +5,25 @@
  
 <mapper namespace="com.sksalstn.test.realtor.repository.RealtorRepository">
 	
-	<insert id="insertRealtor" parameterType="com.sksalstn.test.realtor.domain.Realtor">
+	<insert id="insertRealtor" parameterType="com.sksalstn.test.realtor.domain.Realtor"
+	useGeneratedKeys="true" keyProperty="id">
 	
-		INSERT INTO `new_review`
+		INSERT INTO 
+			`realtor`
  		(
-			`Id`
-			, `office`
+			`office`
 			, `phoneNumber`
 			, `address`
 			, `grade`
-			, `createdAt`
-			, `updatedAt`
  		) 
  		VALUES
  		(
-			#{Id}
-			, #{office}
+			#{office}
 			, #{phoneNumber}
 			, #{address}
 			, #{grade}
-			, NOW()
-			, NOW()
  		)
 	
 	</insert>
-
-
 
 </mapper>
