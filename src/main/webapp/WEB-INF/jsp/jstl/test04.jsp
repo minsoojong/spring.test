@@ -42,16 +42,17 @@
 					<th>할부</th>
 				</tr>
 				
+				<c:forEach var="cardBill" items="${cardBillList }" >
 				<tr>
 					<td>${cardBill.store } </td>
-					<td><fmt:formatNumber value="${carBill }" type="currency" /></td>
-					<td><fmt:formatDate value="${now }" pettern="yyyy년 MM월 dd일" /></td>
-					<td>${carBill.installment }</td>
+					<td><fmt:formatNumber value="${cardBill.pay }" type="currency" /></td>
+					<fmt:parseDate value="${cardBill.date }" pattern="yyyy-MM-dd" var="date" />
+					<td><fmt:formatDate value="${date }" pattern="yyyy년 MM월 dd일" /></td>
+					<td>${cardBill.installment }</td>
 				</tr>
-				
+				</c:forEach>
 				
 			</table>
-	
 	</div>
 	
 
