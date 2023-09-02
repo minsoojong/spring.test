@@ -13,18 +13,57 @@
 <link rel="stylesheet" href="/jstl/css/style.css" type="text/css">
 </head>
 <body>
-	<div id="wrap" class="box bg-info">
-		<section class="d-flax">
-			<div class="contents-left bg-primary"></div>
+	<div id="wrap" class="box">
+		<section class="d-flex">
+			
+			<div class="contents-left bg-primary">
+				<div class="text-white text-center font-weight-bold">기상청</div>
+				 <nav class="d-flex">
+                    <ul class="nav flex-column">
+                        <li class="nav-item menu-item"><a href="#" class="nav-link text-white font-weight-bold">날씨</a></li>
+                        <li class="nav-item menu-item"><a href="#" class="nav-link text-white font-weight-bold">날씨입력</a></li>
+                        <li class="nav-item menu-item"><a href="#" class="nav-link text-white font-weight-bold">테마날씨</a></li>
+                        <li class="nav-item menu-item"><a href="#" class="nav-link text-white font-weight-bold">관측기후</a></li>
+                    </ul>
+                </nav>
+			</div>
 				
 				
-				<div class="contents-right bg-danger">
+				<div class="contents-right d-flax">
+					<h1>과거날씨</h1>
+					<table class="table">
+						<tr>
+							<th>날짜</th>
+							<th>날씨</th>
+							<th>기온</th>
+							<th>강수량</th>
+							<th>미세먼지</th>
+							<th>풍속</th>
+						</tr>
+						
+						<tr>
+							<td>2023년 9월 2일</td>
+							<td>맑음</td>
+							<td>31도</td>
+							<td>0%</td>
+							<td>높음</td>
+							<td>낮음</td>
+						</tr>
+					</table>
+				
 				
 				</div>
-		
 			
 		</section>
-		<footer></footer>
+		<footer class="d-flex">
+			<div class="rogo">
+				<img width="200" src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fwww.kma.go.kr%2Fw%2Fresources%2Fimage%2Ffoot_logo2.png&type=sc960_832" alt="기상청 로고 사진 " </img>
+			</div>
+			<div class="address text-secondary mt-3 ml-5 small">(07062) 서울시 동작구 여의대방로16길 61 <br>
+				Copyright@2023 KMA. All Rights RESERVED.	
+			</div>
+			
+		</footer>
 	
 	
 	</div>
