@@ -13,13 +13,14 @@
 <link rel="stylesheet" href="/jstl/css/style.css" type="text/css">
 </head>
 <body>
-	<div id="wrap" class="box">
+	<div id="wrap" class="box mt-3">
 		<section class="d-flex">
 			
-			<div class="contents-left bg-primary">
-				<div class="text-white text-center font-weight-bold">기상청</div>
+			<div class="contents-left pr-3">
+				<div class="text-white text-center font-weight-bold pt-3">
+					<img width="40" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjAxMjBfMTcy%2FMDAxNjQyNjY2MTE1Njk3.S_c3AYh1eLaxeDwjADqJ2ih6AMD4icvkweMic176jFEg.wN1Mu2cmFZO9CuBqx9ICzibBsf7lJpft9JnHhWBwZRkg.PNG.realdebate2011%2Fweather04.png&type=sc960_832" alt="기상청로고"> 기상청</div>
 				 <nav class="d-flex">
-                    <ul class="nav flex-column">
+                    <ul class="nav flex-column pt-4">
                         <li class="nav-item menu-item"><a href="#" class="nav-link text-white font-weight-bold">날씨</a></li>
                         <li class="nav-item menu-item"><a href="#" class="nav-link text-white font-weight-bold">날씨입력</a></li>
                         <li class="nav-item menu-item"><a href="#" class="nav-link text-white font-weight-bold">테마날씨</a></li>
@@ -29,9 +30,9 @@
 			</div>
 				
 				
-				<div class="contents-right d-flax">
-					<h1>과거날씨</h1>
-					<table class="table">
+				<div class="contents-right pl-5 pt-3">
+					<h3>과거날씨</h3>
+					<table class="table text-center">
 						<tr>
 							<th>날짜</th>
 							<th>날씨</th>
