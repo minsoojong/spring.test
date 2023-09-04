@@ -2,12 +2,13 @@ package com.sksalstn.test.weatherhistory.domain;
 
 import java.sql.Date;
 
-public class Weatherhistory {
+public class Weather {
 
 	private int id;
 	private String date;
 	private String weather;
 	private String temperatures;
+	private String precipitation;
 	private String microDust;
 	private String windSpeed;
 	private Date createdAt;
@@ -37,6 +38,12 @@ public class Weatherhistory {
 	}
 	public void setTemperatures(String temperatures) {
 		this.temperatures = temperatures;
+	}
+	public String getPrecipitation() {
+		return precipitation;
+	}
+	public void setPrecipitation(String precipitation) {
+		this.precipitation = precipitation;
 	}
 	public String getMicroDust() {
 		return microDust;

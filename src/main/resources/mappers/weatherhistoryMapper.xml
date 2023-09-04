@@ -3,10 +3,10 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
  
- <mapper namespace="com.sksalstn.test.weatherhistory.repository.Weatherhistory">
+ <mapper namespace="com.sksalstn.test.weatherhistory.repository.WeatherRepository">
  
- 	<select id="selectWeatherhistory" parameterType="int"
- 	resultType="com.sksalstn.test.weatherhistory.domain.Weatherhistory">
+ 	<select id="selectWeatherHistory"
+ 	resultType="com.sksalstn.test.weatherhistory.domain.Weather">
  	
  		SELECT
  			`id`
@@ -20,13 +20,30 @@
  			, `updatedAt`
  		FROM
  			`weatherhistory`	
- 	
- 	
- 	
- 	
- 	
- 	
  	</select>
+ 	
+ 	<insert id="insertWeather" parameterType="map">
+ 		INSERT INTO
+			`weqtherhistory`
+			(
+				`date`
+ 			, `temperatures`
+ 			, `precipitation`
+ 			, `microDust`
+ 			, `windSpeed`
+ 		) 
+ 		VALUES
+ 		(	
+ 			#{date}
+ 			, #{temperatures}
+ 			, #{precipitation}
+ 			, #{micrdDust}
+ 			, #{windSpeed}
+ 		)			
+ 				
+
+ 	
+ 	</insert>
  	
  	
  </mapper>	
