@@ -12,7 +12,7 @@ public interface WeatherRepository {
 	
 	public List<Weather> selectWeatherHistory();
 
-}
+
 
 
 	public int insertWeather(
@@ -22,3 +22,4 @@ public interface WeatherRepository {
 							, @Param("precipitation")double precipitation
 							, @Param("microDust")String microDust
 							, @Param("windSpeed")double windSpeed);
+}
