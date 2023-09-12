@@ -78,6 +78,8 @@
 					, data:{"url":address}
 					, success:function(data) {
 						isDuplicateCheck = true;
+						// 성공 : {"result":"success"}
+						// 실패 : {"result":"fail"}
 						if(data.isDuplicate) {
 							isDuplicateUrl = true;
 							$("#duplicateUrlText").removeClass("d-none");

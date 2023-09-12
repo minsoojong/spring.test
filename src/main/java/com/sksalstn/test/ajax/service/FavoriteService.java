@@ -14,7 +14,7 @@ public class FavoriteService {
 	@Autowired
 	private FavoriteRepository favoriteRepository;
 	
-	public List<Favorite> getFavoriteList() {
+	public List<Favorite>  getFavoriteList() {
 		List<Favorite> favoriteList = favoriteRepository.selectFavoriteList();
 		
 		return favoriteList;
@@ -22,6 +22,7 @@ public class FavoriteService {
 	
 	public int addFavorite(String name, String url) {
 		int count = favoriteRepository.insertFavorite(name, url);
+		
 		return count;
 	}
 	
@@ -30,11 +31,12 @@ public class FavoriteService {
 		
 //		if(count == 0) {
 //			return false;
-//		}else {
+//		} else {
 //			return true;
 //		}
 		
 		return count != 0;
+		
 	}
 	
 	public int deleteFavorite(int id) {
@@ -42,15 +44,5 @@ public class FavoriteService {
 		
 		return count;
 	}
-	
-	
 
 }
-
-
-
-
-
-
-
-

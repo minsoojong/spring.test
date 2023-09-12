@@ -28,7 +28,7 @@
 				<td>${favorite.id }</td>
 				<td>${favorite.name }</td>
 				<td>${favorite.url }</td>
-				<td><button type="button" class="btn btn-danger btn-sm delete-btn">삭제</button></td>
+				<td><button type="button" data-favorite-id ="${favorite.id }" class="btn btn-danger btn-sm delete-btn">삭제</button></td>
 			</tr>
 			</c:forEach>
 		</tbody>
@@ -44,7 +44,32 @@
 	<script>
 		$(document).ready(function() {
 			$(".delete-btn").on("click", function() {
-				alert("삭제버튼!");
+				
+				let id = $(this).data("favorite-id");
+				
+				$.ajax({
+					type:"get"
+					, url:"/ajax/favorite/delete"
+					, data:{"id":id}
+					, success:function(data) {
+						
+						// 성공 : {"result":"success"}
+						// 실패 : {"result":"fail"}
+						if(data.result == "success") {
+							location.reload();
+						}else {
+							alert("삭제실패");
+						}
+					}
+					, error:function() {
+						alert("삭제 에러");
+					}
+				
+					
+				});
+				
+				
+				
 			});
 			
 			
